@@ -17,7 +17,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_FIRSTNAME = "name";
 
-    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_BIO + "(" + KEY_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_FIRSTNAME + "TEXT);";
+    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_BIO + "(" + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_FIRSTNAME + " TEXT);";
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
